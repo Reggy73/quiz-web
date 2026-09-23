@@ -1,0 +1,184 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-background: #90c2e7;
+    --nav-background: #2a4b64;
+    --page-background: #e3edf4;
+    --top-banner: #9bd1cc;
+    --card-border: #3b6b78;
+    --card-background: #fff;
+    --footer-background: #ccc;
+    --user-buttons: #3885c6;
+    --shadow: #000;
+}
+
+html {
+    background-color: var(--page-background);
+}
+
+header {
+    background-color: var(--header-background);
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav {
+    background-color: var(--nav-background);
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+#section-heading {
+    width: 90%;
+    height: 65px;
+    border-radius: 10px;
+    background-color: var(--top-banner);
+    margin: 15px auto;
+    line-height: 65px;
+}
+
+main > section {
+    border-radius: 8px;
+    margin: 40px auto; 
+    width: 70%;
+    text-align: center;
+    background-color: var(--card-background);
+    box-shadow: 0px 3px 10px var(--shadow);
+    overflow: hidden;
+}
+
+footer {
+    background-color: var(--footer-background);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* index.html */
+
+#welcome-note {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--top-banner);
+    margin: 15px auto;
+}
+
+#collections {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#collections > article {
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px var(--shadow);
+    height: 160px;
+    width: 150px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+#collections > article > p {
+    font-size: 19px;
+    padding-top: 5px;
+}
+
+#navigation-buttons {
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0px 3px 7px var(--shadow);
+    margin: 20px auto;
+    padding: 10px;
+
+}
+
+#navigation-buttons > h3 + button {
+    background-color: #ED8B41;
+    color: #fff;
+    width: 35px;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#navigation-buttons button + button {
+    background-color: var(--user-buttons);
+    color: #fff;
+    width: 35px;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* quizzes.html */
+
+#quizzes {
+    width: 335px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    gap: 35px;
+    margin: 30px auto;
+}
+
+#quizzes > article {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0px 3px 7px var(--shadow);
+    position: relative;
+}
+
+#quizzes > article > p {
+    font-size: 17px;
+}
+
+#quizzes > article > button {
+    width: 100px;
+    height: 27px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--user-buttons);
+    cursor: pointer;
+    line-height: 8px;
+    position: absolute;
+    top: 135px;
+    left: 25px;
+}
+
+section > p:nth-child(3) {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
