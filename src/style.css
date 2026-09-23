@@ -47,7 +47,7 @@ nav a {
 }
 
 #section-heading {
-    width: 90%;
+    width: 80%;
     height: 65px;
     border-radius: 10px;
     background-color: var(--top-banner);
@@ -128,7 +128,6 @@ footer {
 #navigation-buttons button + button {
     background-color: var(--user-buttons);
     color: #fff;
-    width: 35px;
     border-radius: 20px;
     width: 150px;
     height: 35px;
@@ -181,4 +180,30 @@ section > p:nth-child(3) {
     font-size: 25px;
     padding: 10px 0;
     margin-bottom: 5px;
+}
+
+#test-timetable {
+    width: 50%;
+    margin: 30px auto 40px;
+    text-align: left;
+}
+
+#test-timetable > table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#test-timetable > table tr > td {
+    padding: 15px 10px 5px;
+    border-bottom: 1px solid #999; 
+}
+
+#test-timetable > table button {
+    background-color: var(--user-buttons);
+    color: #fff;
+    border-radius: 20px;
+    width: 90px;
+    height: 23px;
+    border: none;
+    cursor: pointer;
 }
