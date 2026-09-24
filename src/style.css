@@ -123,7 +123,7 @@ button:hover {
 
 }
 
-#navigation-buttons > h3 + button {
+#navigation-buttons a:nth-child(2) > button {
     background-color: var(--registration-button);
     color: #fff;
     width: 35px;
@@ -136,7 +136,7 @@ button:hover {
     cursor: pointer;
 }
 
-#navigation-buttons button + button {
+#navigation-buttons a:nth-child(3) > button {
     background-color: var(--user-buttons);
     color: #fff;
     border-radius: 20px;
