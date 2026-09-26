@@ -25,26 +25,39 @@
                     <h2>UPCOMING TESTS</h2>
                 </article>
                 <section id="test-timetable">
-                    <table>
-                        <tr>
-                            <td>Date:<br><b>Oct 26</b></td>
-                            <td>Name:<br><b>Comprehensive World History</b></td>
-                            <td><button>View Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>Date:<br><b>Nov 3</b></td>
-                            <td>Name:<br><b>Basic Mathematics</b></td>
-                            <td><button>View Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>Date:<br><b>Nov 9</b></td>
-                            <td>Name:<br><b>English Literature</b></td>
-                            <td><button>View Details</button></td>
-                        </tr>
-                    </table>
+                    <article>
+                        <div class="details-container">
+                            <p>Date:<br><time datetime="10-26">Oct 26<sup>th</sup></time></p>
+                            <p>Name:<br><strong>Comprehensive World History</strong></p>
+                            <button class="btn">View Details</button>
+                            <p class="test-details">An Exam about the History of the seven continents. Will take place for 3 hours in the Historical theatre.</p>
+                        </div>
+                        <div class="details-container">
+                            <p>Date:<br><time datetime="11-03">Nov 3<sup>rd</sup></time></p>
+                            <p>Name:<br><strong>Basic Mathematics</strong></p>
+                            <button class="btn">View Details</button>
+                            <p class="test-details">Exam topics mainly cover algebra and linear equations, make sure your well prepared.</p>
+                        </div>
+                        <div class="details-container">
+                            <p>Date:<br><time datetime="11-09">Nov 9<sup>th</sup></time></p>
+                            <p>Name:<br><strong>Computer Science</strong></p>
+                            <button class="btn">View Details</button>
+                            <p class="test-details">Computer Science, the subject of the modern generations. Mostly covering basic concepts of the subject.</p>
+                        </div>
+                    </article>
                 </section>
                 <footer>&copy; Quiz Central | All Rights Reserved</footer>
             </section>
         </main>
+        <script>
+            const buttons = document.querySelectorAll(".btn");
+            const details = document.querySelectorAll(".details-container");
+
+            buttons.forEach((button, i) => {
+                button.addEventListener("click", () => {
+                    details[i].classList.toggle("open");
+                });
+            });
+        </script>
     </body>
 </html>

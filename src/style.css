@@ -195,23 +195,34 @@ section > p:nth-child(3) {
 
 /* tests.html */
 
-#test-timetable {
-    width: 50%;
-    margin: 30px auto 40px;
+#test-timetable article {
+    width: 27em;
     text-align: left;
+    margin: 30px auto 40px;
 }
-
-#test-timetable > table {
-    border-collapse: collapse;
-    margin: 0 auto;
+.details-container {
+    display: grid;
+    grid-template-columns: 85px 230px 120px;
+    border-bottom: 1px solid #999;
+    height: 63px;
+    overflow: hidden;
+    transition: 0.5s linear;
 }
-
-#test-timetable > table tr > td {
-    padding: 15px 10px 5px;
-    border-bottom: 1px solid #999; 
+.details-container.open {
+    height: 115px;
 }
-
-#test-timetable > table button {
+article div > p {
+    min-width: 210px;
+    margin: 15px 15px 10px;
+}
+article div time {
+    font-weight: bold;
+}
+article div .test-details {
+    grid-column: 1 / 4;
+    margin: 10px 15px 4px;
+}
+article > div > button {
     background-color: var(--user-buttons);
     color: #fff;
     border-radius: 20px;
@@ -219,6 +230,7 @@ section > p:nth-child(3) {
     height: 23px;
     border: none;
     cursor: pointer;
+    margin: 25px auto 5px;
 }
 
 /* registration.html */
